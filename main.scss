@@ -1,0 +1,138 @@
+$blue: #016690;
+$background-color: #e0ddb2;
+$border-color: #dad6ab;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 1em 0 1em 0;
+  ul {
+    text-align: center;
+    li {
+      display: inline;
+      a {
+        text-decoration: none;
+        padding: 0 2em 0 1em;
+        color: $blue;
+      }
+    }
+  }
+}
+
+header {
+  background-image: url(images_website/header.jpg);
+  background-size: cover;
+  height: 20em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    width: 70%;
+    margin-top: 2em;
+    line-height: 1em;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card {
+  border: 15px solid $border-color;
+  border-radius: 8px;
+  background-color: $border-color;
+  margin: 2em 1em 2em 1em;
+  .card-text {
+    margin: 2em 0 1em 0;
+  }
+}
+
+aside {
+  margin: 1em 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
+  border: 1px solid $border-color;
+}
+
+article {
+  margin: 1em 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
+}
+footer {
+  background-color: $blue;
+  height: 3em;
+
+  ul {
+    text-align: center;
+    padding-top: 1em;
+  }
+
+  li {
+    display: inline;
+  }
+  a {
+    text-decoration: none;
+    padding: 3em 2em 0 1em;
+    color: $background-color;
+  }
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    text-align: right;
+  }
+  img {
+    width: 40em;
+    height: 12em;
+    object-fit: cover;
+  }
+  .card {
+    width: 80%;
+    margin-left: 4em;
+    display: flex;
+    justify-content: center;
+  }
+  .card-text {
+    padding: 0 0 0 1em;
+  }
+  main {
+    display: flex;
+    padding-bottom: 2em;
+  }
+  aside {
+    width: 68em;
+    height: 22em;
+  }
+  article {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    margin: 1em 0 0 1em;
+    width: 45%;
+  }
+  aside {
+    height: 13em;
+    margin-top: 2em;
+    margin-bottom: 0;
+  }
+  article {
+    margin-left: 1em;
+    margin-top: 2em;
+    padding-top: 1em;
+  }
+}

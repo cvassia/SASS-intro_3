@@ -1,0 +1,158 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 1em 0 1em 0;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0 2em 0 1em;
+  color: #016690;
+}
+
+header {
+  background-image: url(images_website/header.jpg);
+  background-size: cover;
+  height: 20em;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h1 {
+  width: 70%;
+  margin-top: 2em;
+  line-height: 1em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card {
+  border: 15px solid #dad6ab;
+  border-radius: 8px;
+  background-color: #dad6ab;
+  margin: 2em 1em 2em 1em;
+}
+
+.card .card-text {
+  margin: 2em 0 1em 0;
+}
+
+aside {
+  margin: 1em 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
+  border: 1px solid #dad6ab;
+}
+
+article {
+  margin: 1em 1em 1em 1em;
+  padding: 1em 1em 1em 1em;
+}
+
+footer {
+  background-color: #016690;
+  height: 3em;
+}
+
+footer ul {
+  text-align: center;
+  padding-top: 1em;
+}
+
+footer li {
+  display: inline;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 3em 2em 0 1em;
+  color: #e0ddb2;
+}
+
+@media (min-width: 768px) {
+  nav ul {
+    text-align: right;
+  }
+  img {
+    width: 40em;
+    height: 12em;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .card {
+    width: 80%;
+    margin-left: 4em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-text {
+    padding: 0 0 0 1em;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 2em;
+  }
+  aside {
+    width: 68em;
+    height: 22em;
+  }
+  article {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card {
+    margin: 1em 0 0 1em;
+    width: 45%;
+  }
+  aside {
+    height: 13em;
+    margin-top: 2em;
+    margin-bottom: 0;
+  }
+  article {
+    margin-left: 1em;
+    margin-top: 2em;
+    padding-top: 1em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
